@@ -1,0 +1,621 @@
+@font-face {
+    font-family: "catshop";
+    src: url("../img/CatShop.ttf");
+}
+
+@font-face {
+    font-family: "paladinFLF";
+    src: url("../img/PaladinFLF.ttf");
+}
+
+@font-face {
+    font-family: "Mordred";
+    src: url("../img/Mordred.ttf");
+}
+
+.noSelect {
+    user-select: none;
+}
+
+.App1 {
+    text-align: center;
+    background-image: url(../img/bg_game.jpg);
+    z-index: -1;
+    min-height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+}
+
+.App2 {
+    text-align: center;
+    background-image: url(../img/bg_game2.jpg);
+    z-index: -1;
+    min-height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+
+}
+
+.App3 {
+    text-align: center;
+    background-image: url(../img/bg_game3.jpg);
+    z-index: -1;
+    min-height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+}
+
+.App4 {
+    text-align: center;
+
+    background-image: url(../img/bg_game5.jpg);
+    z-index: -1;
+    min-height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+}
+
+.counter {
+    width: 70%;
+
+    text-align: center;
+    position: absolute;
+    padding-top: 40vmin;
+    font-size: 10rem;
+}
+
+.backgroundBlur {
+    width: 100%;
+    margin-left: -216px;
+    margin-top: -36px;
+    position: absolute;
+    text-align: center;
+    height: 100vmin;
+    width: 100%;
+    background-image: url(../img/bg_Victory.jpg);
+    /*   background-image: url(http://legionofleia.com/wp-content/uploads/635940959451713459-589661209_hogwarts-harry-potter-28869061-1920-1081.jpg);
+*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 9;
+}
+
+.backgroundBgVictorySerpentard {
+    width: 27%;
+    margin: 0 0 0 580px;
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    background-image: url(../img/Victory_Serpentard.png);
+    /*   background-image: url(http://legionofleia.com/wp-content/uploads/635940959451713459-589661209_hogwarts-harry-potter-28869061-1920-1081.jpg);
+*/
+    background-repeat: no-repeat;
+    z-index: 10;
+    background-size: cover;
+}
+
+.backgroundBgVictorySerdaigle {
+    width: 27%;
+    margin: 0 0 0 580px;
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    background-image: url(../img/Victory_serdaigle.png);
+    /*   background-image: url(http://legionofleia.com/wp-content/uploads/635940959451713459-589661209_hogwarts-harry-potter-28869061-1920-1081.jpg);
+*/
+    background-repeat: no-repeat;
+    z-index: 10;
+    background-size: cover;
+}
+
+.backgroundBgVictoryPoufsouffle {
+    width: 27%;
+    margin: 0 0 0 580px;
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    background-image: url(../img/Victory_Poufsouffle.png);
+    /*   background-image: url(http://legionofleia.com/wp-content/uploads/635940959451713459-589661209_hogwarts-harry-potter-28869061-1920-1081.jpg);
+*/
+    background-repeat: no-repeat;
+    z-index: 10;
+    background-size: cover;
+}
+
+.backgroundBgVictoryGryffondor {
+    width: 27%;
+    margin: 0 0 0 580px;
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    background-image: url(../img/Victory_Gryffondor.png);
+    /*   background-image: url(http://legionofleia.com/wp-content/uploads/635940959451713459-589661209_hogwarts-harry-potter-28869061-1920-1081.jpg);
+*/
+    background-repeat: no-repeat;
+    z-index: 10;
+    background-size: cover;
+}
+
+.player {
+    margin-top: 10%;
+}
+
+.barLeft {
+    width: 300px;
+    float: left;
+    margin-top: 5%;
+    margin-left: 30px;
+}
+
+.barRight {
+    width: 300px;
+    float: right;
+    margin-top: 5%;
+    margin-left: 30px;
+}
+
+.playerLeft {
+    height: 95vmin;
+    float: left;
+    margin-left: 30px;
+    margin-top: 0;
+}
+
+.playerRight {
+    height: 95vmin;
+    float: right;
+    margin-right: 30px;
+    margin-top: 0;
+}
+
+.playerRight img {
+    width: 142px;
+    height: 142px;
+    object-fit: cover;
+    margin-top: 140%;
+}
+
+.blocPlayer {
+    padding-top: 320px;
+}
+
+.drapeauGryffondor img,
+.drapeauSerpentard img,
+.drapeauPoufsouffle img,
+.drapeauSerdaigle img {
+    width: 142px;
+    height: 142px;
+    object-fit: cover;
+    margin-top: 140%;
+    border-style: solid;
+    border-color: #ded49d;
+}
+
+.drapeauGryffondor {
+    background-image: url(../img/Drapeau_Griffondor.png);
+    background-size: cover;
+    width: 250px;
+    min-height: 100vh;
+}
+
+.drapeauSerpentard {
+    background-image: url(../img/Drapeau_Serpentard1.png);
+    background-size: cover;
+    width: 250px;
+    min-height: 100vh;
+}
+
+.drapeauPoufsouffle {
+    background-image: url(../img/Drapeau_Poufsouffle.png);
+    background-size: cover;
+    width: 250px;
+    min-height: 100vh;
+}
+
+.drapeauSerdaigle {
+    background-image: url(../img/Drapeau_Serdaigle.png);
+    background-size: cover;
+    width: 250px;
+    min-height: 100vh;
+}
+
+.sorts {
+    float: center;
+}
+
+.combo1 {
+    position: absolute;
+    z-index: 3;
+    font-size: 10vmin;
+    color: rgb(17, 206, 0);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #2bff00, 0 0 30px #2bff00, 0 0 40px #2bff00, 0 0 55px #2bff00, 0 0 75px #2bff00;
+    font-family: "paladinFLF";
+    top: 250px;
+    left: 500px;
+}
+
+.combo2 {
+    position: absolute;
+    z-index: 3;
+    font-size: 10vmin;
+    color: rgb(17, 206, 0);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #2bff00, 0 0 30px #2bff00, 0 0 40px #2bff00, 0 0 55px #2bff00, 0 0 75px #2bff00;
+    font-family: "paladinFLF";
+    top: 250px;
+    left: 1000px;
+}
+
+.combo3 {
+    position: absolute;
+    z-index: 3;
+    font-size: 10vmin;
+    color: rgb(17, 206, 0);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #2bff00, 0 0 30px #2bff00, 0 0 40px #2bff00, 0 0 55px #2bff00, 0 0 75px #2bff00;
+    font-family: "paladinFLF";
+    top: 550px;
+    left: 500px;
+}
+
+.combo4 {
+    position: absolute;
+    z-index: 3;
+    font-size: 10vmin;
+    color: rgb(17, 206, 0);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #2bff00, 0 0 30px #2bff00, 0 0 40px #2bff00, 0 0 55px #2bff00, 0 0 75px #2bff00;
+    font-family: "paladinFLF";
+    top: 550px;
+    left: 1000px;
+}
+
+.effectimageL {
+    bottom: 16vh;
+    position: absolute;
+    height: 60vmin;
+    left: 12vw;
+    z-index: 50;
+    transform: rotate(180deg);
+}
+
+.effectimageR {
+    bottom: 13vh;
+    position: absolute;
+    height: 60vmin;
+    right: 12vw;
+    z-index: 50;
+}
+
+.deLCool {
+    font-family: "paladinFLF";
+    font-size: 80px;
+    position: absolute;
+    margin-left: 290px;
+    margin-top: 10%;
+    color: green;
+    text-shadow: 0px 5px 2px rgba(0, 0, 0, 0.1), 5px 10px 1px rgba(0, 0, 0, 0.05);
+}
+
+.deRCool {
+    font-family: "paladinFLF";
+    font-size: 80px;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 1100px;
+    color: green;
+    text-shadow: 0px 5px 2px rgba(0, 0, 0, 0.1), 5px 10px 1px rgba(0, 0, 0, 0.05);
+}
+
+.deLPasCool {
+    font-family: "paladinFLF";
+    font-size: 80px;
+    position: absolute;
+    margin-left: 290px;
+    margin-top: 10%;
+    color: red;
+    text-shadow: 0px 5px 2px rgba(0, 0, 0, 0.1), 5px 10px 1px rgba(0, 0, 0, 0.05);
+}
+
+.deRPasCool {
+    font-family: "paladinFLF";
+    font-size: 80px;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 1100px;
+    color: red;
+    text-shadow: 0px 5px 2px rgba(0, 0, 0, 0.1), 5px 10px 1px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Health bar */
+
+.health-bar {
+    height: 20px;
+    width: 300px;
+    border-radius: 50px;
+    border: 1px solid #333;
+}
+
+.health-bar-left {
+    float: left;
+}
+
+.health-bar-right {
+    float: right;
+}
+
+.filler {
+    background: #1da598;
+    height: 100%;
+    border-radius: inherit;
+    transition: width 0.2s ease-in;
+    width: 300px;
+}
+
+.filler1 {
+    background: #1da598;
+    height: 100%;
+    border-radius: inherit;
+    transition: width 0.2s ease-in;
+    width: 300px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+    position: fixed;
+    background: white;
+    width: 80%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content {
+    position: fixed;
+    background: white;
+    width: 80%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 40px;
+}
+
+.Gryffondor {
+    height: 70vmin;
+    padding-top: 2%;
+    z-index: 5;
+}
+
+.Serpentard {
+    height: 70vmin;
+    padding-top: 2%;
+    z-index: 5;
+}
+
+.Serdaigle {
+    height: 70vmin;
+    padding-top: 2%;
+    z-index: 5;
+}
+
+.Poufsouffle {
+    height: 70vmin;
+    padding-top: 2%;
+    z-index: 5;
+}
+
+.Detraqueur {
+    height: 70vmin;
+    padding-top: 2%;
+    z-index: 5;
+}
+
+.Bieraubeurre {
+    height: 70vmin;
+    padding-top: 2%;
+    z-index: 5;
+}
+
+.Expelliarmus {
+    height: 70vmin;
+    padding-top: 2%;
+    z-index: 5;
+}
+
+.ChoiceCharactertoHome {
+    position: absolute;
+    top: 1vmin;
+    margin-left: 3vmin;
+    text-decoration: underline;
+    color: #d3b988;
+}
+
+
+/*Fin CSS ChoiceCharacter*/
+
+
+/*Début CSS Home*/
+
+.intro {
+    position: absolute;
+    width: 150vmin;
+    top: 50vmin;
+    margin-left: 40vmin;
+    margin-right: 30vmin;
+    text-align: center;
+    font-size: 1.2rem;
+    animation-name: introAnimation;
+    animation-duration: 4s;
+}
+
+@keyframes introAnimation {
+    from {
+        transform: scale(2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+/*Fin CSS Home*/
+
+
+/*Début CSS Game*/
+
+.gameToHome {
+    position: absolute;
+    top: 1vmin;
+    left: 3vmin;
+    color: #d3b988;
+    text-decoration: underline;
+}
+
+.toucheS {
+    padding-top: 630px;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.toucheL {
+    padding-top: 630px;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+    float: right;
+}
+
+.test {
+    float: center;
+    padding-top: 80px;
+}
+
+
+/* css  end Game */
+
+.backgroundBlur1 {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    height: 100vmin;
+    width: 100%;
+    background-image: url(../img/bg_Victory.jpg);
+    /*   background-image: url(http://legionofleia.com/wp-content/uploads/635940959451713459-589661209_hogwarts-harry-potter-28869061-1920-1081.jpg);
+*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 9;
+}
+
+.backgroundBgVictorySerpentard {
+    width: 27%;
+    margin: 0 0 0 580px;
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    background-image: url(../img/Victory_Serpentard.png);
+    /*   background-image: url(http://legionofleia.com/wp-content/uploads/635940959451713459-589661209_hogwarts-harry-potter-28869061-1920-1081.jpg);
+*/
+    background-repeat: no-repeat;
+    z-index: 10;
+    background-size: cover;
+}
+
+.backgroundBgVictorySerdaigle {
+    width: 27%;
+    margin: 0 0 0 580px;
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    background-image: url(../img/Victory_serdaigle.png);
+    /*   background-image: url(http://legionofleia.com/wp-content/uploads/635940959451713459-589661209_hogwarts-harry-potter-28869061-1920-1081.jpg);
+*/
+    background-repeat: no-repeat;
+    z-index: 10;
+    background-size: cover;
+}
+
+.backgroundBgVictoryPoufsouffle {
+    width: 27%;
+    margin: 0 0 0 580px;
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    background-image: url(../img/Victory_Poufsouffle.png);
+    /*   background-image: url(http://legionofleia.com/wp-content/uploads/635940959451713459-589661209_hogwarts-harry-potter-28869061-1920-1081.jpg);
+*/
+    background-repeat: no-repeat;
+    z-index: 10;
+    background-size: cover;
+}
+
+.backgroundBgVictoryGryffondor {
+    width: 27%;
+    margin: 0 0 0 580px;
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    background-image: url(../img/Victory_Gryffondor.png);
+    /*   background-image: url(http://legionofleia.com/wp-content/uploads/635940959451713459-589661209_hogwarts-harry-potter-28869061-1920-1081.jpg);
+*/
+    background-repeat: no-repeat;
+    z-index: 10;
+    background-size: cover;
+}
+
+.btnReturn {
+    top: 8vh;
+    margin: 0 auto;
+    /*     float: center; */
+    left: 45vw;
+    position: absolute;
+}
+
+.btnReturn button {
+    text-decoration: none;
+    color: #d3b988;
+    border-radius: 10px;
+    font-size: 2rem;
+    background-color: #2d0f0d;
+    border: 1px solid black;
+    box-shadow: 2px 2px 1px black;
+    width: 20vmin;
+    margin: 0 auto;
+    outline: none;
+}
+
+.btnReturn button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}

@@ -1,0 +1,44 @@
+.bgLibrary {
+    text-align: center;
+
+    background-image: url(../img/Bglibrary1.jpg);
+
+    z-index: -1;
+    min-height: 100vh;
+
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+}
+
+.LibraryButton {
+
+    position: relative;
+    width: 20vmin;
+    text-align: center;
+    font-size: 1.2rem;
+    float: center;
+
+    margin-left: 80vmin;
+}
+
+.LibraryButton button {
+    outline: none;
+    padding: 10px;
+    margin-top: 85vmin;
+    text-decoration: none;
+    color: #d3b988;
+    border-radius: 10px;
+    font-size: 2rem;
+    background-color: #2d0f0d;
+    border: 1px solid black;
+    box-shadow: 2px 2px 1px black;
+}
+
+.LibraryButton button:hover {
+    transform: scale(1.5);
+}

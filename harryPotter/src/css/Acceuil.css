@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "catshop";
+  src: url("../img/CatShop.ttf");
+}
+
+@font-face {
+  font-family: "paladinFLF";
+  src: url("../img/PaladinFLF.ttf");
+}
+
+@font-face {
+  font-family: 'Mordred';
+  src: url('../img/Mordred.ttf');
+}
+
+.fondAccueil {
+  text-align: center;
+  min-height: 100vh;
+  background-image: url(../img/bg_Default.jpg);
+  background-size: cover;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+
+}
+
+.intros {
+  margin-top: 5vh;
+  padding: 80px;
+  text-align: center;
+  font-size: 1.6rem;
+  /* animation-name: introAnimation;
+  animation-duration: 4s; */
+  font-family: "Mordred";
+  /*   margin-left: 40vmin;
+  margin-right: 30vmin; */
+
+}
+
+
+.btnContinuer {
+
+  margin: 0 auto;
+  float: center;
+}
+
+.btnContinuer Button {
+
+  text-decoration: none;
+  color: #f7dba9;
+  border-radius: 10px;
+  font-size: 2rem;
+  background-color: #2d0f0d;
+  border: 1px solid black;
+  box-shadow: 2px 2px 1px black;
+  width: 20vmin;
+  margin: 5vh auto;
+  outline: none;
+  height: 50px;
+  width: 40vmin;
+}
+
+.btnContinuer Button:hover {
+  transform: scale(1.2);
+}
+
+@keyframes introAnimation {
+  from {
+    transform: scale(1.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.logoWelcome {
+
+  position: relative;
+  width: 50%;
+  top: 5vmin;
+}
+
+.logo {
+
+  position: relative;
+  width: 30%;
+  top: 10vmin;
+}
+
+/*   min-height: 0vh;
+  max-height: 50vh;
+
+} */
+@media (max-width: 700px) {
+  .intros {
+    margin-top: 5vh;
+    padding: 80px;
+    text-align: center;
+    font-size: 1.2rem;
+    /* animation-name: introAnimation;
+    animation-duration: 4s; */
+    font-family: "Mordred";
+    /*   margin-left: 40vmin;
+    margin-right: 30vmin; */
+
+  }
+
+  .btnContinuer Button {
+    margin: 0;
+  }
+
+  .logoWelcome {
+    width: 70%;
+    top: 10vmin;
+  }
+}
+
+@media (max-width: 500px) {
+  .logoWelcome {
+    width: 70%;
+    top: 10vmin;
+  }
+
+  .intros {
+    padding-top: 20vmin;
+    text-align: center;
+    font-size: 1.2rem;
+    /*  animation-name: introAnimation;
+    animation-duration: 4s; */
+    font-family: "Mordred";
+    /*   margin-left: 40vmin;
+  margin-right: 30vmin; */
+
+  }
+
+}
