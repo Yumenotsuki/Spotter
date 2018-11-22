@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import { Route, HashRouter, Switch } from 'react-router-dom';
 import Home from './Home';
 import ChoiceDualOrMulti from './ChoiceDualOrMulti';
 import WinnerPage from './Winner';
@@ -60,7 +60,7 @@ class App extends Component {
 	render() {
 		const isActive = this.state.color ? 'App-logo' : 'Working';
 		return (
-			<BrowserRouter>
+			<HashRouter>
 				<div className="fondAccueil">
 					<Switch>
 						<Route exact path="/" component={Home} />
@@ -145,7 +145,7 @@ class App extends Component {
 						<Route exact path="/page-de-LibraryCardBattle" component={LibraryCardMulti} />
 					</Switch>
 				</div>
-			</BrowserRouter>
+			</HashRouter>
 		);
 	}
 }
