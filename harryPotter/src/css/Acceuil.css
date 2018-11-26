@@ -48,7 +48,7 @@
 }
 
 .btnContinuer Button {
-
+  outline: none;
   text-decoration: none;
   color: #f7dba9;
   border-radius: 10px;
@@ -110,6 +110,7 @@
   }
 
   .btnContinuer Button {
+    outline: none;
     margin: 0;
   }
 

@@ -16,6 +16,7 @@ import ChoPortrait from './img/cho.jpeg';
 import MichaelPortrait from './img/michael.jpg';
 import HannahPortrait from './img/hannah.png';
 import ErniePortrait from './img/ernie.jpg';
+import { Container, Row, Col } from 'reactstrap';
 
 const charactersMulti = [
 	{
@@ -230,41 +231,42 @@ class ChoiceCharacterMulti extends Component {
 
 	render() {
 		return (
-			<div className="choicePageMulti">
-				<div className="blocLeftMulti">
-					<div className="choiceLT">
-						<div className="imageName">
-							<p className="nameChoiceLeft">{this.state.nameL}</p>
-							<img src={this.state.imageL} alt="" />
+			<div className="choicePage">
+				<Container className="ContainerChoicePage">
+					<div className="blocLeftMulti">
+						<div className="choiceLT">
+							<div className="imageName">
+								<p className="nameChoiceLeft">{this.state.nameL}</p>
+								<img src={this.state.imageL} alt="" />
+							</div>
+							<img className="houseImgLeft" src={this.state.imagesortL} alt="" />
 						</div>
-						<img className="houseImgLeft" src={this.state.imagesortL} alt="" />
-					</div>
-					<div className="choiceLT">
-						<div className="imageName">
-							<p className="nameChoiceLeft">{this.state.nameLB}</p>
-							<img src={this.state.imageLB} alt="" />
-						</div>
-						<img className="houseImgLeft" src={this.state.imagesortLB} alt="" />
-					</div>
-				</div>
-				<div className="blocRightMulti">
-					<div className="choiceRB">
-						<img className="houseImgRight" src={this.state.imagesortR} alt="" />
-						<div className="imageName">
-							<p className="nameChoiceLeft">{this.state.nameR}</p>
-							<img src={this.state.imageR} alt="" />
+						<div className="choiceLT">
+							<div className="imageName">
+								<p className="nameChoiceLeft">{this.state.nameLB}</p>
+								<img src={this.state.imageLB} alt="" />
+							</div>
+							<img className="houseImgLeft" src={this.state.imagesortLB} alt="" />
 						</div>
 					</div>
-					<div className="choiceRB">
-						<img className="houseImgRight" src={this.state.imagesortRB} alt="" />{' '}
-						<div className="imageName">
-							<p className="nameChoiceLeft">{this.state.nameRB}</p>
-							<img src={this.state.imageRB} alt="" />
+					<div className="blocRightMulti">
+						<div className="choiceRB">
+							<img className="houseImgRight" src={this.state.imagesortR} alt="" />
+							<div className="imageName">
+								<p className="nameChoiceLeft">{this.state.nameR}</p>
+								<img src={this.state.imageR} alt="" />
+							</div>
+						</div>
+						<div className="choiceRB">
+							<img className="houseImgRight" src={this.state.imagesortRB} alt="" />{' '}
+							<div className="imageName">
+								<p className="nameChoiceLeft">{this.state.nameRB}</p>
+								<img src={this.state.imageRB} alt="" />
+							</div>
 						</div>
 					</div>
-				</div>
 
-				{/*           <div className="carteLeftMulti">
+					{/*           <div className="carteLeftMulti">
             <img className="characterLeft" src={this.state.imageL} alt="" />
             <img className="houseImgLeft" src={this.state.imagesortL} alt="" />
           </div>
@@ -287,7 +289,7 @@ class ChoiceCharacterMulti extends Component {
           <br />
           <p className="nameChoiceLeftBottom">{this.state.nameLB}</p> */}
 
-				{/*         <div className="blocRightMulti">
+					{/*         <div className="blocRightMulti">
           <div className="carteRightMulti">
             <img className="houseImgRight" src={this.state.imagesortR} alt="" />
             <img className="characterRight" src={this.state.imageR} alt="" />
@@ -311,33 +313,34 @@ class ChoiceCharacterMulti extends Component {
           <br />
           <p className="nameChoiceRightBottom">{this.state.nameRB}</p>
         </div> */}
-				<div className="blocCenterMulti">
-					{charactersMulti.map((character, index) => (
-						<div key={index} className="oneCharacterMulti">
-							<button
-								className={'btnCharacterMulti' + character.school}
-								onClick={() => this.handleProfilChange(index)}
-							>
-								<img src={character.image} alt={character.name} />
+					<Row className="blocCenter">
+						{charactersMulti.map((character, index) => (
+							<Col key={index} xs="3" sm="3" md="3" className="oneCharacter">
+								<button
+									className={'btnCharacterMulti' + character.school}
+									onClick={() => this.handleProfilChange(index)}
+								>
+									<img src={character.image} alt={character.name} />
 
-								<p className="nameChoiceCenter">{character.name}</p>
-								<br />
-							</button>
-						</div>
-					))}
-				</div>
-				<div />
-				{/*Lien pour revenir à l'accueil*/}
+									<p className="nameChoiceCenter">{character.name}</p>
+									<br />
+								</button>
+							</Col>
+						))}
+					</Row>
+					<div />
+					{/*Lien pour revenir à l'accueil*/}
 
-				{/*Lien pour commencer la partie*/}
-				<div className="btnStartMulti">
-					<NavLink to="/page-de-GameMulti">
-						<button> Start</button>
-					</NavLink>
-				</div>
-				<div className="btnResetMulti">
-					<button onClick={this.resetFunction}> Reset</button>
-				</div>
+					{/*Lien pour commencer la partie*/}
+					<div className="btnStartMulti">
+						<NavLink to="/page-de-GameMulti">
+							<button> Start</button>
+						</NavLink>
+					</div>
+					<div className="btnResetMulti">
+						<button onClick={this.resetFunction}> Reset</button>
+					</div>
+				</Container>
 			</div>
 		);
 	}

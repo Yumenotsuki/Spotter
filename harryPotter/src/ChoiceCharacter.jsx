@@ -181,6 +181,7 @@ class ChoiceCharacter extends Component {
 
 						<p className="nameChoice">{this.state.nameL}</p>
 					</div>
+
 					<div className="blocRight">
 						<div className="carteRight">
 							<img src={this.state.imagesortR} alt={this.state.nameR} />

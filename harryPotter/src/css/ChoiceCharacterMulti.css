@@ -107,7 +107,18 @@
   margin-left: 3%;
   width: 25%;
   text-align: center;
-  height: 100%;
+
+}
+
+.blocRightMulti {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 10%;
+  width: 25%;
+  text-align: center;
+  margin-left: 3%;
+
 }
 
 .choiceLT {
@@ -145,16 +156,6 @@
   text-align: center;
 }
 
-.blocRightMulti {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 10%;
-  width: 25%;
-  text-align: center;
-  margin-left: 3%;
-  height: 100%;
-}
 
 .blocRightBottom {
   position: absolute;
@@ -282,6 +283,7 @@
 }
 
 .btnStartMulti button {
+  outline: none;
   padding: 6px;
   font-size: 2rem;
   text-decoration: none;

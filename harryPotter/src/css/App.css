@@ -603,6 +603,7 @@
 }
 
 .btnReturn button {
+    outline: none;
     text-decoration: none;
     color: #d3b988;
     border-radius: 10px;

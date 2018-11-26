@@ -83,7 +83,7 @@ class GameMulti extends Component {
 							<img src={this.props.imageL} alt="imageL" />
 							<img src={toucheS} alt="toucheS" />
 						</div>
-						<img src={this.state.cardeffectL} className="effectimageLM" alt="cardeffectL" />
+
 						<div className={'drapeauMulti' + this.props.schoolL} />
 					</div>
 					<div className="playerLeftBottom">
@@ -91,7 +91,7 @@ class GameMulti extends Component {
 							<img src={this.props.imageLB} alt="imageLB" />
 							<img src={toucheF} alt="toucheF" />
 						</div>
-						<img src={this.state.cardeffectLB} className="effectimageLBM" alt="cardeffectLB" />
+
 						<div className={'drapeauMulti' + this.props.schoolLB} />
 					</div>
 				</div>
@@ -102,7 +102,6 @@ class GameMulti extends Component {
 							<img src={this.props.imageR} alt="imageR" />
 							<img src={toucheL} alt="toucheL" />
 						</div>
-						<img src={this.state.cardeffectR} className="effectimageRM" alt="cardeffectR" />
 					</div>
 					<div className="playerRightBottom">
 						<div className={'drapeauMulti' + this.props.schoolRB} />
@@ -110,7 +109,6 @@ class GameMulti extends Component {
 							<img src={this.props.imageRB} alt="imageRB" />
 							<img src={toucheJ} alt="toucheJ" />
 						</div>
-						<img src={this.state.cardeffectRB} className="effectimageRBM" alt="cardeffectRB" />
 					</div>
 				</div>
 				<div className="sortsMulti">
