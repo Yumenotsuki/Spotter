@@ -451,8 +451,6 @@ class HpMulti extends React.Component {
 					picture={this.state.picture}
 				/>
 
-				<img src={this.state.cardeffect} className="effectimage" alt="cardeffect" />
-
 				{this.props.dammage > 0 ? (
 					<div className="deLCoolM">{this.state.dammageeffect1}</div>
 				) : (
