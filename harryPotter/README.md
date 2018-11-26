@@ -1,5 +1,6 @@
 Bienvenue sur Spotter !!
-Je vous présente notre jeu Spotter réalisé par
+Je vous présente notre jeu Spotter réalisé par :
+
 https://www.linkedin.com/in/lea-delacotte-developpeur/
 
 https://www.linkedin.com/in/marion-koo-sin-lin-javascript-web-developer/
