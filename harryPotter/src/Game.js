@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 
 import './css/App.css';
 import Sort from './Spell';
-import { NavLink } from 'react-router-dom';
 import toucheL from './img/toucheL.png';
 import toucheS from './img/toucheS.png';
 import Vide from './img/Vide.png';
@@ -84,18 +83,18 @@ class Game extends Component {
 				{/*Game*/}
 				<div className="playerLeft">
 					<div className={'drapeau' + this.props.schoolL}>
-						<img src={this.props.imageL} />
+						<img src={this.props.imageL} alt="imageL" />
 					</div>
 				</div>
 				<div className="playerRight">
 					<div className={'drapeau' + this.props.schoolR}>
-						<img src={this.props.imageR} />
+						<img src={this.props.imageR} alt="imageR" />
 					</div>
 				</div>
-				<img className="toucheL" src={toucheL} />
-				<img className="toucheS" src={toucheS} />
-				<img src={this.state.cardeffectL} className="effectimageL" />
-				<img src={this.state.cardeffectR} className="effectimageR" />
+				<img className="toucheL" src={toucheL} alt="toucheL" />
+				<img className="toucheS" src={toucheS} alt="toucheS" />
+				<img src={this.state.cardeffectL} className="effectimageL" alt="cardeffectL" />
+				<img src={this.state.cardeffectR} className="effectimageR" alt="cardeffectR" />
 				<div className="sorts">
 					<Sort
 						pause={this.state.pause}

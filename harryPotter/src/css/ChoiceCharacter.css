@@ -28,6 +28,7 @@
 
 
 .oneCharacter {
+
   padding-bottom: 20px;
 
   background-color: transparent !important;
@@ -97,17 +98,19 @@
   text-shadow: 2px 2px 2px black;
 }
 
+.ContainerChoicePage {
+  max-width: 50% !important;
+}
+
 .blocCenter {
 
   padding: 1rem;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100vh;
-  height: 55vmin;
+
+  width: 100%;
+
   align-items: center;
-  margin: 0 1em 3em;
-  position: relative;
-  display: flex;
+
+
   /* //flex-wrap: wrap; */
 }
 
@@ -215,39 +218,4 @@
 
 .btnReset button:hover {
   transform: scale(1.5);
-}
-
-
-@media (max-width: 1200px) {
-  .blocCenter {
-    width: 100vh;
-    transform: scale(0.9);
-    padding: 1rem;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    min-height: 80vmin;
-    align-items: center;
-    margin: 0 0 0;
-    position: relative;
-
-    display: flex;
-    /* //flex-wrap: wrap; */
-  }
-}
-
-@media (max-width: 800px) {
-  .blocCenter {
-    width: 200vh;
-    transform: scale(0.5);
-    padding: 1rem;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    min-height: 80vmin;
-    align-items: center;
-    margin: 0 0 1em;
-    position: relative;
-
-    display: flex;
-    /* //flex-wrap: wrap; */
-  }
 }

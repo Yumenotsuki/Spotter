@@ -58,7 +58,6 @@ class App extends Component {
 	};
 
 	render() {
-		const isActive = this.state.color ? 'App-logo' : 'Working';
 		return (
 			<HashRouter>
 				<div className="fondAccueil">

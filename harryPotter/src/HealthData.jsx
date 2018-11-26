@@ -1,6 +1,4 @@
 import React from 'react';
-import { Modal, ModalHeader } from 'reactstrap';
-import { Redirect } from 'react-router';
 import './css/App.css';
 import WinnerPage from './Winner';
 
@@ -251,7 +249,7 @@ class Hp extends React.Component {
 					picture={this.state.picture}
 				/>
 
-				<img src={this.state.cardeffect} className="effectimage" />
+				<img src={this.state.cardeffect} className="effectimage" alt="cardeffect" />
 				{this.props.dammage > 0 ? (
 					<div className="deLCool">{this.state.dammageeffectL}</div>
 				) : (

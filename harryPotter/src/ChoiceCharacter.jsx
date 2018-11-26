@@ -16,6 +16,7 @@ import ChoPortrait from './img/cho.jpeg';
 import MichaelPortrait from './img/michael.jpg';
 import HannahPortrait from './img/hannah.png';
 import ErniePortrait from './img/ernie.jpg';
+import { Container, Row, Col } from 'reactstrap';
 
 const characters = [
 	{
@@ -168,53 +169,57 @@ class ChoiceCharacter extends Component {
 	render() {
 		return (
 			<div className="choicePage">
-				<div className="blocLeft">
-					<div className="carteLeft">
-						<img src={this.state.imagesortL} />
-						<br />
-						<div className="imageChoice">
-							<img src={this.state.imageL} />
+				<Container className="ContainerChoicePage">
+					<div className="blocLeft">
+						<div className="carteLeft">
+							<img src={this.state.imagesortL} alt={this.state.nameL} />
+							<br />
+							<div className="imageChoice">
+								<img src={this.state.imageL} alt={this.state.nameL} />
+							</div>
 						</div>
+
+						<p className="nameChoice">{this.state.nameL}</p>
+					</div>
+					<div className="blocRight">
+						<div className="carteRight">
+							<img src={this.state.imagesortR} alt={this.state.nameR} />
+							<br />
+							<div className="imageChoice">
+								<img src={this.state.imageR} alt={this.state.nameR} />
+							</div>
+						</div>
+						<p className="nameChoice">{this.state.nameR}</p>
 					</div>
 
-					<p className="nameChoice">{this.state.nameL}</p>
-				</div>
-				<div className="blocRight">
-					<div className="carteRight">
-						<img src={this.state.imagesortR} />
-						<br />
-						<div className="imageChoice">
-							<img src={this.state.imageR} />
-						</div>
+					<Row className="blocCenter">
+						{characters.map((character, index) => (
+							<Col key={index} xs="3" sm="3" md="3" className="oneCharacter">
+								<button
+									className={'btnCharacter' + character.school}
+									onClick={() => this.handleProfilChange(index)}
+								>
+									<img src={character.image} alt={character.name} />
+
+									<p className="nameCarte">{character.name}</p>
+									<br />
+								</button>
+							</Col>
+						))}
+					</Row>
+
+					<div />
+
+					{/*Lien pour commencer la partie*/}
+					<div className="btnStart">
+						<NavLink to="/page-de-Game">
+							<button> Start</button>
+						</NavLink>
 					</div>
-					<p className="nameChoice">{this.state.nameR}</p>
-				</div>
-				<div className="blocCenter">
-					{characters.map((character, index) => (
-						<div className="oneCharacter">
-							<button
-								className={'btnCharacter' + character.school}
-								onClick={() => this.handleProfilChange(index)}
-							>
-								<img src={character.image} />
-
-								<p className="nameCarte">{character.name}</p>
-								<br />
-							</button>
-						</div>
-					))}
-				</div>
-				<div />
-
-				{/*Lien pour commencer la partie*/}
-				<div className="btnStart">
-					<NavLink to="/page-de-Game">
-						<button> Start</button>
-					</NavLink>
-				</div>
-				<div className="btnReset">
-					<button onClick={this.resetFunction}> Reset</button>;
-				</div>
+					<div className="btnReset">
+						<button onClick={this.resetFunction}> Reset</button>;
+					</div>
+				</Container>
 			</div>
 		);
 	}

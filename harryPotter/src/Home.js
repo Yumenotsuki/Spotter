@@ -6,7 +6,7 @@ class Home extends Component {
 	render() {
 		return (
 			<div className="accueilFond">
-				<img className="logoWelcome" src={logoWelcome} />
+				<img className="logoWelcome" src={logoWelcome} alt="logoWelcome" />
 				<div className="intros">
 					<p>
 						Your family has been captured by Voldemort's henchmen. You have to get the goblet of fire to

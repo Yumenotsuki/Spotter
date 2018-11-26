@@ -22,7 +22,7 @@ class WinnerPageMulti extends Component {
 						{' '}
 						<div className="endGame">
 							<div>
-								<img className="redimention" src={this.props.picture} />
+								<img className="redimention" src={this.props.picture} alt={this.props.winnerName} />
 							</div>
 						</div>
 							<p className='MessageVictory'>Well played {this.props.winnerName}</p>

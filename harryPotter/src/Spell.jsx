@@ -51,18 +51,18 @@ class Sort extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			currentImage: "",
+			currentImage: '',
 			clickState: false,
 			time: 0,
 			expo: 0.9,
-			currentSort: "",
-			randomInt: "",
-			sorteffect: "",
-			currentDammage: "",
+			currentSort: '',
+			randomInt: '',
+			sorteffect: '',
+			currentDammage: '',
 			reDirect: false,
 			counter: 2
 		};
-		this.coef = 1
+		this.coef = 1;
 	}
 
 	getRandomInt(max) {
@@ -105,15 +105,15 @@ class Sort extends Component {
 	};
 
 	componentDidMount() {
-		console.log("[App] Inside ComponentDidMount");
+		console.log('[App] Inside ComponentDidMount');
 		this.myInterval = setInterval(() => {
 			if (this.state.counter === 0) {
 				clearInterval(this.myInterval);
 				this.setState({
-					counter: ""
+					counter: ''
 				});
 				this.clockCard();
-				document.addEventListener("keydown", this.resetCard, false);
+				document.addEventListener('keydown', this.resetCard, false);
 			} else {
 				this.setState(prevState => ({
 					counter: prevState.counter - 1

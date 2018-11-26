@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 /* import "./img/drapeau.png"; */
 import './css/App.css';
 import SortMulti from './SpellMulti';
-import { NavLink } from 'react-router-dom';
 import toucheL from './img/toucheL.png';
 import toucheS from './img/toucheS.png';
 import toucheF from './img/toucheF.png';
 import toucheJ from './img/toucheJ.png';
-
 
 class GameMulti extends Component {
 	constructor(props) {
@@ -23,8 +21,7 @@ class GameMulti extends Component {
 			imageRB: null,
 			dammageeffect: null,
 			r: null,
-			pause: false,
-
+			pause: false
 		};
 	}
 	changePause = () => {
@@ -39,29 +36,27 @@ class GameMulti extends Component {
 		if (event.key === 's' || event.key === 'S') {
 			this.setState({
 				player: 'left',
-				counter: this.state.counter + 1,
+				counter: this.state.counter + 1
 			});
 		}
 
 		if (event.key === 'f' || event.key === 'F') {
 			this.setState({
-				counter: this.state.counter + 1,
+				counter: this.state.counter + 1
 			});
-
 		}
 
 		if (event.key === 'j' || event.key === 'J') {
 			this.setState({
-				counter: this.state.counter + 1,
+				counter: this.state.counter + 1
 			});
 		}
 
 		if (event.key === 'l' || event.key === 'L') {
 			this.setState({
 				player: 'right',
-				counter: this.state.counter + 1,
+				counter: this.state.counter + 1
 			});
-
 		}
 		if (event.key === 'Escape') {
 			//	alert('En pause ...');
@@ -85,20 +80,18 @@ class GameMulti extends Component {
 				<div className="blocPlayerLeft">
 					<div className="playerLeftTop">
 						<div className="boutonImageLeft">
-							<img src={this.props.imageL} />
-							<img src={toucheS} />
-
+							<img src={this.props.imageL} alt="imageL" />
+							<img src={toucheS} alt="toucheS" />
 						</div>
-						<img src={this.state.cardeffectL} className="effectimageLM" />
+						<img src={this.state.cardeffectL} className="effectimageLM" alt="cardeffectL" />
 						<div className={'drapeauMulti' + this.props.schoolL} />
 					</div>
 					<div className="playerLeftBottom">
 						<div className="boutonImageLeft">
-							<img src={this.props.imageLB} />
-							<img src={toucheF} />
-
+							<img src={this.props.imageLB} alt="imageLB" />
+							<img src={toucheF} alt="toucheF" />
 						</div>
-						<img src={this.state.cardeffectLB} className="effectimageLBM" />
+						<img src={this.state.cardeffectLB} className="effectimageLBM" alt="cardeffectLB" />
 						<div className={'drapeauMulti' + this.props.schoolLB} />
 					</div>
 				</div>
@@ -106,20 +99,18 @@ class GameMulti extends Component {
 					<div className="playerRightTop">
 						<div className={'drapeauMulti' + this.props.schoolR} />
 						<div className="boutonImageRight">
-							<img src={this.props.imageR} />
-							<img src={toucheL} />
-
+							<img src={this.props.imageR} alt="imageR" />
+							<img src={toucheL} alt="toucheL" />
 						</div>
-						<img src={this.state.cardeffectR} className="effectimageRM" />
+						<img src={this.state.cardeffectR} className="effectimageRM" alt="cardeffectR" />
 					</div>
 					<div className="playerRightBottom">
 						<div className={'drapeauMulti' + this.props.schoolRB} />
 						<div className="boutonImageRight">
-							<img src={this.props.imageRB} />
-							<img src={toucheJ} />
-
+							<img src={this.props.imageRB} alt="imageRB" />
+							<img src={toucheJ} alt="toucheJ" />
 						</div>
-						<img src={this.state.cardeffectRB} className="effectimageRBM" />
+						<img src={this.state.cardeffectRB} className="effectimageRBM" alt="cardeffectRB" />
 					</div>
 				</div>
 				<div className="sortsMulti">
